@@ -90,11 +90,13 @@ const NormalRange = ({ Currency }: Props) => {
       <div className="range-line">
         <div
           className="range-handle range-handle-min"
+          data-testid="handler-one"
           style={{ left: `${(selectedMinValue / maxValue) * 100}%` }}
           onMouseDown={handleMouseDown(setSelectedMinValue, selectedMaxValue, true)}
         />
         <div
           className="range-handle range-handle-max"
+          data-testid="handler-two"
           style={{ left: `${(selectedMaxValue / maxValue) * 100}%` }}
           onMouseDown={handleMouseDown(setSelectedMaxValue, selectedMinValue, false)}
         />
