@@ -1,0 +1,50 @@
+
+.range-container {
+    width: 400px;
+    margin: 20px auto;
+  }
+  
+  .range-line {
+    position: relative;
+    height: 6px;
+    background-color: #ccc;
+    border-radius: 3px;
+  }
+  
+  .range-handle {
+    position: absolute;
+    top: -7px;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .range-handle:hover {
+    transform: scale(1.2);
+  }
+  
+  .range-handle-min {
+    background-color: #28a745;
+  }
+  
+  .range-handle-max {
+    background-color: #dc3545;
+  }
+  
+  .range-values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .range-handle {
+    cursor: grab;
+  }
+  
+  .range-handle:active {
+    cursor: grabbing;
+  }
+  
